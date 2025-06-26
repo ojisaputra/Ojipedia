@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TopUp All-In</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="top-bar">
+    <button id="helpBtn">🧠</button>
+    <button id="langBtn">🌐</button>
+    <button id="adminBtn">Admin</button>
+  </div>
+  <header>
+    <h1 id="title">TopUp All-In</h1>
+    <p id="subtitle">Layanan top-up pulsa, kuota, e-wallet, dan lainnya</p>
+  </header>
+  <section class="products">
+    <h2 id="prodTitle">Daftar Produk</h2>
+    <div id="productList" class="grid"></div>
+  </section>
+  <section class="cart">
+    <h2 id="cartTitle">Keranjang</h2>
+    <ul id="cartItems"></ul>
+    <button id="backupBtn">Backup</button>
+    <button id="importBtn">Import</button>
+  </section>
+  <button id="historyBtn" class="fab">Riwayat</button>
+  <section id="historySection" class="modal">
+    <div class="modal-content">
+      <h2>Riwayat Transaksi</h2>
+      <ul id="historyList"></ul>
+      <button class="closeBtn">Tutup</button>
+    </div>
+  </section>
+  <section id="adminSection" class="modal">
+    <div class="modal-content">
+      <h2>Admin Panel</h2>
+      <input type="password" id="adminPass" placeholder="Password"/>
+      <button id="adminLogin">Login</button>
+      <div id="adminControls" class="hidden">
+        <input type="text" id="prodName" placeholder="Nama Produk"/>
+        <input type="number" id="prodPrice" placeholder="Harga"/>
+        <input type="file" id="prodImage"/>
+        <button id="addProdBtn">Tambah Produk</button>
+      </div>
+      <button class="closeBtn">Tutup</button>
+    </div>
+  </section>
+  <section id="helpSection" class="modal">
+    <div class="modal-content">
+      <h2>Panduan</h2>
+      <ul>
+        <li>Tambah produk via Admin</li>
+        <li>Pilih produk untuk keranjang</li>
+        <li>Backup/Import produk</li>
+        <li>Lihat Riwayat transaksi</li>
+      </ul>
+      <button class="closeBtn">Tutup</button>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
